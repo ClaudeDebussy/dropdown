@@ -1,0 +1,43 @@
+.header {
+  height: 2rem;
+
+  background-color: bisque;
+
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.dropdown {
+  justify-content: flex-end;
+  display: grid;
+
+  height: 100%;
+  width: auto;
+}
+
+.dropdown-top {
+  background-color: antiquewhite;
+
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.dropdown-top img {
+  display: block;
+}
+
+.dropdown-item {
+  display: none;
+  width: 10rem;
+  height: 2rem;
+  padding: 0.25rem;
+  outline: 1px solid black;
+}
+
+.dropdown-item:nth-child(odd) {
+  background-color: antiquewhite;
+}
+
+.dropdown-item.show {
+  display: block;
+}
