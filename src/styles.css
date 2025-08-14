@@ -1,10 +1,13 @@
 .header {
-  height: 2rem;
-
   background-color: bisque;
 
   display: flex;
   flex-direction: row-reverse;
+}
+
+.header,
+.dropdown-top {
+  height: 2rem;
 }
 
 .dropdown {
@@ -16,7 +19,6 @@
 }
 
 .dropdown-top {
-  background-color: antiquewhite;
 
   display: flex;
   flex-direction: row-reverse;
@@ -31,11 +33,31 @@
   width: 10rem;
   height: 2rem;
   padding: 0.25rem;
-  outline: 1px solid black;
+}
+
+.dropdown-item:hover{
+  display: none;
+  width: 10rem;
+  height: 2rem;
+  padding: 0.25rem;
+
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .dropdown-item:nth-child(odd) {
   background-color: antiquewhite;
+}
+
+.dropdown-item:active{
+  display: none;
+  width: 10rem;
+  height: 2rem;
+  padding: 0.25rem;
+
+  font-weight: 700;
+  cursor: pointer;
+  background-color: burlywood;
 }
 
 .dropdown-item.show {
